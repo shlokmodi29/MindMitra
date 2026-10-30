@@ -1,0 +1,150 @@
+/* MindMitra Global App Styles & Micro-animations */
+
+/* Base & Typography */
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', 'Noto Sans Bengali', 'Noto Sans Devanagari', 'Noto Sans', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Accessible Skip Link */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  background: #9f3c16;
+  color: #ffffff;
+  padding: 0.75rem 1.25rem;
+  z-index: 9999;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 0 0 0.75rem 0.75rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: top 0.2s ease-in-out;
+}
+.skip-link:focus,
+.skip-link:focus-visible {
+  top: 0;
+  outline: 3px solid #FAF7F2;
+  outline-offset: 2px;
+}
+
+/* Reduced Motion Support (System preference and in-app setting) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.reduced-motion-active *,
+.reduced-motion-active *::before,
+.reduced-motion-active *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+
+/* Elder Reading Size Scaling */
+.elder-text-scale-sm {
+  font-size: 95%;
+}
+.elder-text-scale-md {
+  font-size: 100%;
+}
+.elder-text-scale-lg {
+  font-size: 112%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-surface, #fff8f5);
+  color: var(--color-on-surface, #1f1b18);
+  min-height: 100vh;
+}
+
+/* Material Symbols fill helper */
+.material-symbols-fill {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Elder Accessibility Focus Ring */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+[tabindex="0"]:focus-visible {
+  outline: 3px solid #FAF7F2;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 5px #9f3c16;
+}
+
+/* Custom Scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Audio Waveform animation */
+@keyframes soundwave {
+  0%, 100% { height: 8px; }
+  50% { height: 28px; }
+}
+
+.wave-bar {
+  animation: soundwave 1.2s ease-in-out infinite;
+}
+.wave-bar:nth-child(2) { animation-delay: 0.15s; }
+.wave-bar:nth-child(3) { animation-delay: 0.3s; }
+.wave-bar:nth-child(4) { animation-delay: 0.45s; }
+.wave-bar:nth-child(5) { animation-delay: 0.6s; }
+.wave-bar:nth-child(6) { animation-delay: 0.2s; }
+
+/* Pulse animation for voice trigger & beacons */
+@keyframes gentle-pulse {
+  0% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(1.04); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.9; }
+}
+
+.animate-gentle-pulse {
+  animation: gentle-pulse 3s infinite ease-in-out;
+}
+
+/* Modal backdrop fade */
+.modal-backdrop {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background-color: rgba(31, 27, 24, 0.45);
+}
+
+/* Touch targets guarantee minimum 48-56px */
+.elder-touch-target {
+  min-height: 52px;
+  min-width: 52px;
+}
+
+/* High Visibility Focus Ring for Keyboard & Switch Access */
+:focus-visible {
+  outline: 3px solid #9f3c16 !important;
+  outline-offset: 3px !important;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #9f3c16 !important;
+  outline-offset: 3px !important;
+}

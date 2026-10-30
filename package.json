@@ -1,0 +1,21 @@
+{
+  "name": "mindmitra-cognitive-companion",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "MindMitra - Gentle Cognitive Companion & Living Memory Archive",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx -y serve -p 3000 .",
+    "dev": "npx -y serve -p 3000 .",
+    "test": "node scripts/validate.js && node scripts/test_engine.js && node scripts/test_auth.js && node scripts/test_patient_experience.js && node scripts/test_reminders.js && node scripts/test_memory_world.js && node scripts/test_cognitive_activities.js && node scripts/test_smriti_ai.js && node scripts/test_adaptive_engine.js && node scripts/test_voice_multilingual.js && node scripts/test_family_connection.js && node scripts/test_emergency_sos.js && node scripts/test_caregiver_dashboard.js && node scripts/test_analytics_reports.js && node scripts/test_offline_sync.js && node scripts/test_security_privacy.js && node scripts/test_accessibility_ner.js && node scripts/test_part16_final_qa.js && node scripts/test_header_responsiveness.js && node scripts/test_doctor_role.js && node scripts/test_doctor_e2e_flow.js && node scripts/test_smart_daily_plan.js && node scripts/test_memory_timeline.js && node scripts/test_doctor_appointment_prep.js && node scripts/test_mood_check_in.js && node scripts/test_voice_journal.js"
+  },
+  "keywords": [
+    "cognitive-health",
+    "elderly-care",
+    "reminiscence",
+    "stitch",
+    "accessibility"
+  ],
+  "author": "MindMitra Team",
+  "license": "ISC"
+}

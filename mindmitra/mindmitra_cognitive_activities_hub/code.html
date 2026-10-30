@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-fixed-dim":"#e9b8d7","error-container":"#ffdad6","surface-container-lowest":"#ffffff","primary":"#9f3c16","on-secondary-container":"#7a536d","on-secondary-fixed-variant":"#603b54","tertiary-container":"#567d62","primary-fixed-dim":"#ffb59c","surface-container-high":"#f0e6e1","inverse-primary":"#ffb59c","on-primary-fixed-variant":"#822801","error":"#ba1a1a","surface":"#fff8f5","tertiary-fixed":"#c2edcb","secondary":"#79526c","on-error":"#ffffff","on-error-container":"#93000a","primary-fixed":"#ffdbcf","on-tertiary-fixed-variant":"#294e36","inverse-on-surface":"#f9efe9","outline-variant":"#dec0b7","on-surface-variant":"#57423b","surface-tint":"#a23e18","surface-container-highest":"#ebe0db","secondary-fixed":"#ffd7ef","on-secondary-fixed":"#2f1027","surface-dim":"#e2d8d3","on-primary":"#ffffff","surface-bright":"#fff8f5","secondary-container":"#fecceb","on-tertiary-fixed":"#00210f","surface-variant":"#ebe0db","on-background":"#1f1b18","primary-container":"#bf542c","on-tertiary-container":"#f6fff4","tertiary-fixed-dim":"#a7d1b0","on-surface":"#1f1b18","on-primary-container":"#fffbff","tertiary":"#3e644a","on-primary-fixed":"#390c00","surface-container-low":"#fcf2ec","on-tertiary":"#ffffff","surface-container":"#f6ece7","outline":"#8a726a","inverse-surface":"#352f2c","on-secondary":"#ffffff","background":"#fff8f5"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","space-sm":"0.75rem","margin-desktop":"3rem","space-3xl":"4rem","space-2xl":"3rem","gutter-desktop":"2rem","space-xs":"0.5rem","margin-mobile":"1.25rem","space-2xs":"0.25rem","space-lg":"1.5rem","gutter-mobile":"1rem","space-xl":"2rem"},"fontFamily":{"body-md":["Plus Jakarta Sans"],"display-mobile":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-xl":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"caption":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"display":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"]},"fontSize":{"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"display-mobile":["34px",{"lineHeight":"42px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"body-xl":["20px",{"lineHeight":"32px","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"caption":["13px",{"lineHeight":"18px","fontWeight":"500"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"display":["44px",{"lineHeight":"54px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-lg":["16px",{"lineHeight":"22px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_2px_12px_rgba(74,40,64,0.05)]"><div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg shrink-0"><div class="flex items-center gap-space-sm"><img alt="MindMitra Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wh1ONZtSozjOSUeL7-32KP2LbIG7NKR9S8OMEg0mhQKOGR9NnccyXGSdK4YAJBoxwUTWiGJgGuyICdZa7XZwx-tLmqZzkO3hX3MkAC4pCusYoQ0MiEh6Jh8ljjHRHxEm4iS5olvrGpdDhkJGlqJxWmbVvn5uPpx5y8ZVSWlkCn8ttgtYtFqIM0JNqwiE8l0rVZnX89krh01OChkV96ZdDLfPserbFuKVMAlGJuN6p1_TVKuD4_UYqB2BU"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">MindMitra</span><span class="font-caption text-caption text-on-surface-variant font-medium">Memory That Matters</span></div></div><div class="hidden xl:flex items-center bg-surface-container-high p-space-2xs rounded-full shadow-inner"><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md bg-surface-container-lowest text-primary shadow-sm transition-all" data-path="patient-home" href="#">Patient Mode</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" data-path="caregiver-dashboard" href="#">Caregiver Portal</a></div></div><nav class="hidden lg:flex items-center gap-space-xs px-space-xs py-space-2xs bg-surface-container-low rounded-xl" data-active-classes="bg-primary-container text-on-primary-container font-label-lg rounded-xl"><a class="px-space-md py-space-xs rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="patient-home" href="#">Home</a><a class="px-space-md py-space-xs rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="my-day" href="#">My Day</a><a class="px-space-md py-space-xs rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="memory-world" href="#">Memory World</a><a aria-current="page" class="px-space-md py-space-xs transition-colors bg-primary-container text-on-primary-container font-label-lg rounded-xl" data-path="activities" href="#">Activities</a><a class="px-space-md py-space-xs rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="family-circle" href="#">Family Circle</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="hidden md:flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-tertiary-fixed/40 text-on-tertiary-fixed font-caption text-caption"><span class="w-2 h-2 rounded-full bg-tertiary"></span><span>Ready &amp; Synchronized</span></div><div class="hidden sm:flex items-center gap-space-2xs px-space-sm py-space-xs rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md cursor-pointer hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[18px]">translate</span><span>EN / हिं / অ</span></div><button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-secondary text-on-secondary hover:bg-secondary/90 transition-all shadow-[0_4px_14px_-2px_rgba(74,40,64,0.25)]" type="button"><span class="material-symbols-outlined text-[20px]">mic</span><span class="hidden sm:inline font-label-md text-label-md">SmritiAI</span></button><div class="flex items-center gap-space-xs pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAml05UVx_vC9JEQ-b9kXhvl9yXjSiCIjDjVlbc8-FY-fJbKNCH0vKBcne4z-xAdCZkXxnu1F2X4PlGI7w6nxpwKa3DMArHetAnWgpwSfdNX1wtTzH6pxbK2utg6IE2RXPYcZoMDEpomqhUEKugFrJEQuM3CaNpV5a6-9Zz7qBaMaj7IMG1GwIl-6Y2k9ZZIkOLwdyH3PYa2ArSE2cwC5BpJvETads59mlEOCioSxTUzVmzSmT1D36"/><div class="hidden 2xl:flex flex-col text-left"><span class="font-label-md text-label-md leading-none text-on-surface">Asha Devi</span><span class="font-caption text-caption text-on-surface-variant leading-none mt-1">Elder Member</span></div></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-140px)]"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop py-space-xl"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow Element -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-24 left-1/4 w-96 h-96 bg-primary-fixed/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-48 right-10 w-80 h-80 bg-secondary-fixed/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<!-- Hub Header & Orienting Cadence -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg mb-space-2xl">
+<div class="max-w-3xl space-y-space-xs">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-space-2xs rounded-full bg-surface-container-high text-on-surface-variant font-caption text-caption shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">spa</span>
+<span>Preserving Personal Dignity &amp; Joy</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>Daily Wellness Routine</span>
+</div>
+<h1 class="font-display text-display text-on-surface tracking-tight leading-tight">
+          Cognitive Engagement &amp; Memory Activities
+        </h1>
+<p class="font-body-xl text-body-xl text-on-surface-variant leading-relaxed">
+          Calm, dignified, and personalized activities designed to stimulate recall, attention, and joyful connection.
+        </p>
+</div>
+<!-- Quick Session Stats Summary -->
+<div class="flex items-center gap-space-md p-space-sm bg-surface-container-low rounded-xl shadow-sm self-start md:self-auto">
+<div class="w-12 h-12 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">3 of 5 completed</span>
+<span class="font-caption text-caption text-on-surface-variant">Recommended gentle pace for Asha Devi</span>
+</div>
+</div>
+</div>
+<!-- Active In-Progress Session Shell / Interactive Preview -->
+<section aria-label="Current Cognitive Activity Session" class="w-full mb-space-3xl">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-lg text-label-lg text-primary uppercase tracking-wider">Active Activity Shell</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">No pressure • Untimed • Take your time</span>
+</div>
+<!-- Living Activity Canvas -->
+<div class="w-full bg-surface-container-lowest rounded-2xl shadow-xl overflow-hidden flex flex-col">
+<!-- Shell Top Orientation Bar -->
+<div class="px-space-lg lg:px-space-xl py-space-md bg-surface-container flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<button class="inline-flex items-center gap-space-2xs px-space-md py-space-xs rounded-lg bg-surface-container-lowest text-on-surface hover:text-primary transition-all font-label-md text-label-md shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+<span>Back to Activities</span>
+</button>
+<div class="flex items-center gap-space-xs">
+<span class="px-space-sm py-space-2xs rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md uppercase tracking-wider">
+                REMEMBER
+              </span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Personal Memory Recall</span>
+</div>
+</div>
+<!-- Progress Stepper (Discrete, Calm, Adult) -->
+<div class="flex items-center gap-space-md">
+<span class="font-label-md text-label-md text-on-surface-variant">Step 2 of 4</span>
+<div aria-hidden="true" class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="w-3 h-3 rounded-full bg-surface-container-highest"></span>
+<span class="w-3 h-3 rounded-full bg-surface-container-highest"></span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant pl-space-xs hidden sm:inline">5 mins • Gentle Pace</span>
+</div>
+</div>
+<!-- Shell Core Interactive Body -->
+<div class="p-space-lg lg:p-space-2xl grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Heirloom Media / Memory Trigger Artifact -->
+<div class="lg:col-span-5 flex flex-col gap-space-sm">
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-md bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A vintage, warm-toned photograph of two Indian women in elegant handloom shawls drinking steaming tea from ceramic cups outdoors with misty pine hills of Shillong in soft-focus background, golden afternoon sun, cinematic nostalgia, rich earthy hues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4eGyiljLtDN1mv8-shNH3o6kdWjH4fRs9WVMb6mAj3IOXFoO-YOlzUBw034lYelDl7eJfjC5cjaFCXWbNB2sjEYqBNr6_nyqYxGiwQOyo6iaU05Sap25BvO5ME0tVgTy6b19X8UWEHJ9wOhfBuaKMCFENNaY2Dtj7U-0CtVf7SYk2HAQfuLj-pLE7FpzrMNsdvNgAKR1xGT5E2zsC540N3FvvL71BUJkLhgD-0XqgATUGWZ0x1VNv"/>
+<div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-inverse-surface/80 via-inverse-surface/40 to-transparent p-space-md text-inverse-on-surface">
+<span class="font-label-md text-label-md flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+                  Ward's Lake &amp; Pine Ridge, Shillong (Autumn 2018)
+                </span>
+<span class="font-caption text-caption text-inverse-on-surface/80 block mt-space-2xs">
+                  Family Autumn Trip with Daughter Meera
+                </span>
+</div>
+</div>
+<div class="flex items-center justify-between px-space-xs text-on-surface-variant font-caption text-caption">
+<span class="flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified</span>
+                Curated from Asha's Heirloom Album
+              </span>
+<span>Ref: MM-SHL-18</span>
+</div>
+</div>
+<!-- Prompt Question & Large High-Contrast Decision Surfaces -->
+<div class="lg:col-span-7 flex flex-col">
+<div class="mb-space-lg">
+<div class="flex items-center gap-space-2xs text-secondary font-label-md text-label-md uppercase tracking-wider mb-space-2xs">
+<span class="material-symbols-outlined text-[20px]">psychology_alt</span>
+<span>Gentle Recollection</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface leading-snug">
+                Who joined you for hot tea during your 2018 visit to the Shillong pine hills?
+              </h2>
+</div>
+<!-- Adult, Dignified Choice Cards -->
+<fieldset aria-label="Select who joined you for hot tea" class="space-y-space-sm">
+<legend class="sr-only">Choose the correct person from the choices below</legend>
+<!-- Option A: Selected / Identified -->
+<label class="relative flex items-center justify-between p-space-md rounded-xl bg-surface-container-low cursor-pointer shadow-sm transition-all hover:bg-surface-container group">
+<input checked="" class="sr-only peer" name="recollection_choice" type="radio" value="meera"/>
+<div class="flex items-center gap-space-md">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-lg text-label-lg shrink-0">
+                    A
+                  </div>
+<div class="flex flex-col">
+<span class="font-body-xl text-body-xl font-medium text-on-surface">Meera, your daughter</span>
+<span class="font-caption text-caption text-on-surface-variant">Traveled together from Guwahati by road</span>
+</div>
+</div>
+<!-- Dignified tactile checkmark container -->
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+</label>
+<!-- Option B -->
+<label class="relative flex items-center justify-between p-space-md rounded-xl bg-surface-container-lowest cursor-pointer shadow-sm transition-all hover:bg-surface-container-low group">
+<input class="sr-only peer" name="recollection_choice" type="radio" value="sunita"/>
+<div class="flex items-center gap-space-md">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-lg text-label-lg shrink-0 group-hover:bg-surface-container-highest">
+                    B
+                  </div>
+<div class="flex flex-col">
+<span class="font-body-xl text-body-xl text-on-surface">Sunita, your neighbor</span>
+<span class="font-caption text-caption text-on-surface-variant">Morning tea companion at home in Kolkata</span>
+</div>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-transparent flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">circle</span>
+</div>
+</label>
+<!-- Option C -->
+<label class="relative flex items-center justify-between p-space-md rounded-xl bg-surface-container-lowest cursor-pointer shadow-sm transition-all hover:bg-surface-container-low group">
+<input class="sr-only peer" name="recollection_choice" type="radio" value="barua"/>
+<div class="flex items-center gap-space-md">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-lg text-label-lg shrink-0 group-hover:bg-surface-container-highest">
+                    C
+                  </div>
+<div class="flex flex-col">
+<span class="font-body-xl text-body-xl text-on-surface">Dr. Barua</span>
+<span class="font-caption text-caption text-on-surface-variant">Your longtime family physician</span>
+</div>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-transparent flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">circle</span>
+</div>
+</label>
+</fieldset>
+</div>
+</div>
+<!-- Shell Bottom Accessibility & Progression Bar -->
+<div class="px-space-lg lg:px-space-xl py-space-md bg-surface-container-low flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="min-h-[56px] px-space-lg rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-lg text-label-lg flex items-center gap-space-xs shadow-sm transition-all active:scale-95" type="button">
+<span class="material-symbols-outlined text-[22px] text-tertiary">lightbulb</span>
+<span>Need a gentle hint?</span>
+</button>
+<button class="min-h-[56px] px-space-lg rounded-xl bg-secondary text-on-secondary hover:bg-secondary/90 font-label-lg text-label-lg flex items-center gap-space-xs shadow-sm transition-all active:scale-95" type="button">
+<span class="material-symbols-outlined text-[22px]">volume_up</span>
+<span>Listen to question</span>
+</button>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end">
+<span class="font-caption text-caption text-on-surface-variant mr-space-xs hidden md:inline">Great job, Asha. Take your time.</span>
+<button class="w-full sm:w-auto min-h-[56px] px-space-xl rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-lg text-label-lg flex items-center justify-center gap-space-xs shadow-md transition-all active:scale-95" type="button">
+<span>Continue</span>
+<span class="material-symbols-outlined text-[22px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Canonical Taxonomy Filter Bar -->
+<section aria-label="Activity Categories Navigation" class="w-full mb-space-xl">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Browse All Activities</span>
+<span class="px-space-xs py-space-2xs rounded-full bg-surface-container-high text-on-surface-variant font-caption text-caption">20 Canonical Modules</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-tertiary">tune</span>
+<span>Caregiver Synchronized for Mild Recall Support</span>
+</div>
+</div>
+<!-- Filter Buttons Scroller -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-space-xs no-scrollbar" role="tablist">
+<button aria-selected="true" class="shrink-0 px-space-lg py-space-sm rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-sm" role="tab" type="button">
+          All 20 Activities
+        </button>
+<button aria-selected="false" class="shrink-0 px-space-lg py-space-sm rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container font-label-lg text-label-lg transition-colors" role="tab" type="button">
+          REMEMBER (5)
+        </button>
+<button aria-selected="false" class="shrink-0 px-space-lg py-space-sm rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container font-label-lg text-label-lg transition-colors" role="tab" type="button">
+          NOTICE (3)
+        </button>
+<button aria-selected="false" class="shrink-0 px-space-lg py-space-sm rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container font-label-lg text-label-lg transition-colors" role="tab" type="button">
+          SOLVE (2)
+        </button>
+<button aria-selected="false" class="shrink-0 px-space-lg py-space-sm rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container font-label-lg text-label-lg transition-colors" role="tab" type="button">
+          SEQUENCE (4)
+        </button>
+<button aria-selected="false" class="shrink-0 px-space-lg py-space-sm rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container font-label-lg text-label-lg transition-colors" role="tab" type="button">
+          EXPLORE (3)
+        </button>
+<button aria-selected="false" class="shrink-0 px-space-lg py-space-sm rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container font-label-lg text-label-lg transition-colors" role="tab" type="button">
+          CONNECT (3)
+        </button>
+</div>
+</section>
+<!-- Canonical 20 Activities Comprehensive Mosaic Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-space-lg">
+<!-- ================= CATEGORY 1: REMEMBER (5) ================= -->
+<!-- Card 1: Memory Match -->
+<article class="w-full bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-all group">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-2xs rounded-full bg-primary-fixed text-on-primary-fixed font-caption text-caption uppercase tracking-wider">
+              REMEMBER • #01
+            </span>
+<span class="flex items-center gap-space-2xs text-tertiary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">check_circle</span> Completed Today
+            </span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              Memory Match
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2xs">
+              Pair matching familiar family photographs, heirloom jewelry, and tea saucers in a soothing, non-rushed layout.
+            </p>
+</div>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-caption text-caption">4-6 mins</span>
+<span class="px-space-xs py-space-2xs rounded bg-secondary-fixed text-on-secondary-fixed font-caption text-caption">Personalized: 8 Photos</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Calm • High Contrast</span>
+<button class="min-h-[56px] px-space-lg rounded-xl bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface font-label-lg text-label-lg flex items-center gap-space-xs transition-colors" type="button">
+<span>Start Moment</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 2: Personal Memory Recall -->
+<article class="w-full bg-surface-container-lowest rounded-2xl p-space-lg shadow-md flex flex-col justify-between hover:shadow-lg transition-all group">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-2xs rounded-full bg-primary text-on-primary font-caption text-caption uppercase tracking-wider">
+              REMEMBER • #02
+            </span>
+<span class="flex items-center gap-space-2xs text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span> In Progress
+            </span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              Personal Memory Recall
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2xs">
+              Personalized questions drawn gently from Asha's verified albums, trips, and cherished life milestones.
+            </p>
+</div>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-caption text-caption">5 mins</span>
+<span class="px-space-xs py-space-2xs rounded bg-secondary-fixed text-on-secondary-fixed font-caption text-caption">Curated by Meera</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Currently Selected Above</span>
+<button class="min-h-[56px] px-space-lg rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-lg text-label-lg flex items-center gap-space-xs shadow-sm transition-colors" type="button">
+<span>Resume Step 2</span>
+<span class="material-symbols-outlined text-[20px]">play_arrow</span>
+</button>
+</div>
+</article>
+<!-- Card 3: People & Relationships -->
+<article class="w-full bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-all group">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-2xs rounded-full bg-primary-fixed text-on-primary-fixed font-caption text-caption uppercase tracking-wider">
+              REMEMBER • #03
+            </span>
+<span class="flex items-center gap-space-2xs text-on-surface-variant font-caption text-caption">
+              Ready anytime
+            </span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              People &amp; Relationships
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2xs">
+              Reconnecting names, affectionate nicknames, and warm stories to faces of children, grandchildren, and friends.
+            </p>
+</div>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-caption text-caption">4 mins</span>
+<span class="px-space-xs py-space-2xs rounded bg-secondary-fixed text-on-secondary-fixed font-caption text-caption">Family Circle</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Gentle Voice Prompts</span>
+<button class="min-h-[56px] px-space-lg rounded-xl bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface font-label-lg text-label-lg flex items-center gap-space-xs transition-colors" type="button">
+<span>Start Moment</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 4: Photo Story -->
+<article class="w-full bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-all group">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-2xs rounded-full bg-primary-fixed text-on-primary-fixed font-caption text-caption uppercase tracking-wider">
+              REMEMBER • #04
+            </span>
+<span class="flex items-center gap-space-2xs text-tertiary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">check_circle</span> Completed Yesterday
+            </span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              Photo Story
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2xs">
+              Follow a three-picture journey from Asha's college days in Santiniketan, exploring the setting and joy.
+            </p>
+</div>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-caption text-caption">6 mins</span>
+<span class="px-space-xs py-space-2xs rounded bg-secondary-fixed text-on-secondary-fixed font-caption text-caption">Narrative Reminiscence</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Santiniketan 1974</span>
+<button class="min-h-[56px] px-space-lg rounded-xl bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface font-label-lg text-label-lg flex items-center gap-space-xs transition-colors" type="button">
+<span>Start Moment</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 5: Memory Reconstruction -->
+<article class="w-full bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-all group">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-2xs rounded-full bg-primary-fixed text-on-primary-fixed font-caption text-caption uppercase tracking-wider">
+              REMEMBER • #05
+            </span>
+<span class="font-caption text-caption text-on-surface-variant">Recommended Afternoon</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              Memory Reconstruction
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2xs">
+              Arranging significant landmark memories and favorite cities lived in across Assam and West Bengal.
+            </p>
+</div>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-caption text-caption">5 mins</span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-caption text-caption">Spatial Recall</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Assam &amp; Bengal</span>
+<button class="min-h-[56px] px-space-lg rounded-xl bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface font-label-lg text-label-lg flex items-center gap-space-xs transition-colors" type="button">
+<span>Start Moment</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- ================= CATEGORY 2: NOTICE (3) ================= -->
+<!-- Card 6: Attention Hunt -->
+<article class="w-full bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-all group">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-2xs rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-caption text-caption uppercase tracking-wider">
+              NOTICE • #06
+            </span>
+<span class="font-caption text-caption text-tertiary font-medium">Peaceful Observation</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              Attention Hunt
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2xs">
+              Observing tranquil verandah and nature scenes to spot quiet details: a brass bell, a potted hibiscus, or a sleeping cat.
+            </p>
+</div>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-caption text-caption">4 mins</span>
+<span class="px-space-xs py-space-2xs rounded bg-tertiary-fixed-dim/40 text-on-tertiary font-caption text-caption">Gentle Visual Search</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Verandah Life</span>
+<button class="min-h-[56px] px-space-lg rounded-xl bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface font-label-lg text-label-lg flex items-center gap-space-xs transition-colors" type="button">
+<span>Start Moment</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 7: Familiar Object Recognition -->
+<article class="w-full bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-all group">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-2xs rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-caption text-caption uppercase tracking-wider">
+              NOTICE • #07
+            </span>
+<span class="font-caption text-caption text-on-surface-variant">Heritage Elements</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              Familiar Object Recognition
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2xs">
+              Celebrating traditional kitchenware like the brass sil-batta, bell-metal thali, and handwoven gamusa textiles.
+            </p>
+</div>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-caption text-caption">3 mins</span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-caption text-caption">Tactile Sensory Focus</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Cultural Touchstones</span>
+<button class="min-h-[56px] px-space-lg rounded-xl bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface font-label-lg text-label-lg flex items-center gap-space-xs transition-colors" type="button">
+<span>Start Moment</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 8: Sound Recognition -->
+<article class="w-full bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-all group">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-2xs rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-caption text-caption uppercase tracking-wider">
+              NOTICE • #08
+            </span>
+<span class="flex items-center gap-space-2xs text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">graphic_eq</span> Audio Rich
+            </span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              Sound Recognition
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2xs">
+              Listening to nostalgic audioscapes: monsoon rain pattering on a tin roof, a morning tea kettle, and distant evening temple bells.
+            </p>
+</div>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-caption text-caption">5 mins</span>
+<span class="px-space-xs py-space-2xs rounded bg-secondary-fixed text-on-secondary-fixed font-caption text-caption">Auditory Reminiscence</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Headphones Optional</span>
+<button class="min-h-[56px] px-space-lg rounded-xl bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface font-label-lg text-label-lg flex items-center gap-space-xs transition-colors" type="button">
+<span>Start Moment</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- ================= CATEGORY 3: SOLVE (2) ================= -->
+<!-- Card 9: Pattern Predictor -->
+<article class="w-full bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-all group">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-2xs rounded-full bg-secondary-fixed text-on-secondary-fixed font-caption text-caption uppercase tracking-wider">
+              SOLVE • #09
+            </span>
+<span class="font-caption text-caption text-on-surface-variant">Cognitive Flow</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              Pattern Predictor
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2xs">
+              Completing rhythmic geometric sequences inspired by traditional kantha stitching and Assam muga silk borders.
+            </p>
+</div>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-caption text-caption">5 mins</span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-caption text-caption">Visual Logic</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Textile Motifs</span>
+<button class="min-h-[56px] px-space-lg rounded-xl bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface font-label-lg text-label-lg flex items-center gap-space-xs transition-colors" type="button">
+<span>Start Moment</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 10: Object Sorting -->
+<article class="w-full bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-all group">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-2xs rounded-full bg-secondary-fixed text-on-secondary-fixed font-caption text-caption uppercase tracking-wider">
+              SOLVE • #10
+            </span>
+<span class="font-caption text-caption text-tertiary font-medium">Clean &amp; Calming</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              Object Sorting
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2xs">
+              Categorizing comfortable everyday objects into morning tea items versus evening reading lights and shawls.
+            </p>
+</div>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-caption text-caption">4 mins</span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-caption text-caption">Categorization</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Daily Harmony</span>
+<button class="min-h-[56px] px-space-lg rounded-xl bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface font-label-lg text-label-lg flex items-center gap-space-xs transition-colors" type="button">
+<span>Start Moment</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- ================= CATEGORY 4: SEQUENCE (4) ================= -->
+<!-- Card 11: Routine Builder -->
+<article class="w-full bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-all group">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-2xs rounded-full bg-surface-container-highest text-on-surface font-caption text-caption uppercase tracking-wider">
+              SEQUENCE • #11
+            </span>
+<span class="font-caption text-caption text-on-surface-variant">Daily Independence</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              Routine Builder
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2xs">
+              Organizing cards for a serene morning: warm water with tulsi, gentle terrace walk, herbal medicine, and breakfast.
+            </p>
+</div>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-caption text-caption">4 mins</span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-caption text-caption">Executive Comfort</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Morning Cadence</span>
+<button class="min-h-[56px] px-space-lg rounded-xl bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface font-label-lg text-label-lg flex items-center gap-space-xs transition-colors" type="button">
+<span>Start Moment</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 12: Story Sequence -->
+<article class="w-full bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-all group">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-2xs rounded-full bg-surface-container-highest text-on-surface font-caption text-caption uppercase tracking-wider">
+              SEQUENCE • #12
+            </span>
+<span class="font-caption text-caption text-on-surface-variant">Narrative Logic</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              Story Sequence
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2xs">
+              Ordering what happened first, next, and last during the celebration of grandson Rohit's graduation day.
+            </p>
+</div>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-caption text-caption">5 mins</span>
+<span class="px-space-xs py-space-2xs rounded bg-secondary-fixed text-on-secondary-fixed font-caption text-caption">Family Event</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Chronological Flow</span>
+<button class="min-h-[56px] px-space-lg rounded-xl bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface font-label-lg text-label-lg flex items-center gap-space-xs transition-colors" type="button">
+<span>Start Moment</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 13: Cooking Sequence -->
+<article class="w-full bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-all group">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-2xs rounded-full bg-surface-container-highest text-on-surface font-caption text-caption uppercase tracking-wider">
+              SEQUENCE • #13
+            </span>
+<span class="flex items-center gap-space-2xs text-tertiary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">favorite</span> Cherished Recipe
+            </span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              Cooking Sequence
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2xs">
+              Arranging the beloved steps for brewing aromatic Masala Chai with crushed ginger, cardamom, and river mint.
+            </p>
+</div>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-caption text-caption">4 mins</span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-caption text-caption">Procedural Recall</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Assamese Chai Recipe</span>
+<button class="min-h-[56px] px-space-lg rounded-xl bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface font-label-lg text-label-lg flex items-center gap-space-xs transition-colors" type="button">
+<span>Start Moment</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 14: Shopping Memory -->
+<article class="w-full bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-all group">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-2xs rounded-full bg-surface-container-highest text-on-surface font-caption text-caption uppercase tracking-wider">
+              SEQUENCE • #14
+            </span>
+<span class="font-caption text-caption text-on-surface-variant">Practical Memory</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              Shopping Memory
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2xs">
+              Recalling the three fresh greens picked up from the neighborhood morning bazaar for tonight's light soup.
+            </p>
+</div>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-caption text-caption">4 mins</span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-caption text-caption">Working Memory</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Local Bazaar Basket</span>
+<button class="min-h-[56px] px-space-lg rounded-xl bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface font-label-lg text-label-lg flex items-center gap-space-xs transition-colors" type="button">
+<span>Start Moment</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- ================= CATEGORY 5: EXPLORE (3) ================= -->
+<!-- Card 15: Memory Journey -->
+<article class="w-full bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-all group">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-2xs rounded-full bg-tertiary text-on-tertiary font-caption text-caption uppercase tracking-wider">
+              EXPLORE • #15
+            </span>
+<span class="flex items-center gap-space-2xs text-tertiary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">explore</span> Visual Discovery
+            </span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              Memory Journey
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2xs">
+              A guided pictorial journey tracing the ferry ghats across the Brahmaputra River and ancient temples of Kamakhya.
+            </p>
+</div>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-caption text-caption">7 mins</span>
+<span class="px-space-xs py-space-2xs rounded bg-secondary-fixed text-on-secondary-fixed font-caption text-caption">Guwahati &amp; Riverways</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Immersive Scenic</span>
+<button class="min-h-[56px] px-space-lg rounded-xl bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface font-label-lg text-label-lg flex items-center gap-space-xs transition-colors" type="button">
+<span>Start Moment</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 16: Place Explorer -->
+<article class="w-full bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-all group">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-2xs rounded-full bg-tertiary text-on-tertiary font-caption text-caption uppercase tracking-wider">
+              EXPLORE • #16
+            </span>
+<span class="font-caption text-caption text-on-surface-variant">Serene Navigation</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              Place Explorer
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2xs">
+              Quiet exploration of botanical gardens, old bookshops on College Street, and the Victoria Memorial gardens.
+            </p>
+</div>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-caption text-caption">6 mins</span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-caption text-caption">Calm Pacing</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Kolkata Heritage</span>
+<button class="min-h-[56px] px-space-lg rounded-xl bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface font-label-lg text-label-lg flex items-center gap-space-xs transition-colors" type="button">
+<span>Start Moment</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 17: Life Simulation -->
+<article class="w-full bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-all group">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-2xs rounded-full bg-tertiary text-on-tertiary font-caption text-caption uppercase tracking-wider">
+              EXPLORE • #17
+            </span>
+<span class="font-caption text-caption text-on-surface-variant">Social Roleplay</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              Life Simulation
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2xs">
+              A peaceful interactive afternoon acting as gracious host: choosing sweets and serving tea for visiting relatives.
+            </p>
+</div>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-caption text-caption">5 mins</span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-caption text-caption">Social Dignity</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Hosting Warmth</span>
+<button class="min-h-[56px] px-space-lg rounded-xl bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface font-label-lg text-label-lg flex items-center gap-space-xs transition-colors" type="button">
+<span>Start Moment</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- ================= CATEGORY 6: CONNECT (3) ================= -->
+<!-- Card 18: Voice Recall -->
+<article class="w-full bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-all group">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-2xs rounded-full bg-secondary text-on-secondary font-caption text-caption uppercase tracking-wider">
+              CONNECT • #18
+            </span>
+<span class="flex items-center gap-space-2xs text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">record_voice_over</span> Voice Note
+            </span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              Voice Recall
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2xs">
+              Listen to a warm 15-second voice greeting recorded this morning and easily identify which family member called.
+            </p>
+</div>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-caption text-caption">3 mins</span>
+<span class="px-space-xs py-space-2xs rounded bg-secondary-fixed text-on-secondary-fixed font-caption text-caption">From Granddaughter Priya</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Audio Connection</span>
+<button class="min-h-[56px] px-space-lg rounded-xl bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface font-label-lg text-label-lg flex items-center gap-space-xs transition-colors" type="button">
+<span>Start Moment</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 19: Festival Memory -->
+<article class="w-full bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-all group">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-2xs rounded-full bg-secondary text-on-secondary font-caption text-caption uppercase tracking-wider">
+              CONNECT • #19
+            </span>
+<span class="font-caption text-caption text-on-surface-variant">Shared Celebrations</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              Festival Memory
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2xs">
+              Rekindling joyful family traditions of lighting clay diyas during Diwali, Bohag Bihu dance tunes, and Durga Puja bhog.
+            </p>
+</div>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-caption text-caption">5 mins</span>
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-caption text-caption">Cultural Joy</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Diwali &amp; Bihu Songs</span>
+<button class="min-h-[56px] px-space-lg rounded-xl bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface font-label-lg text-label-lg flex items-center gap-space-xs transition-colors" type="button">
+<span>Start Moment</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 20: Family Memory Mission -->
+<article class="w-full bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-all group">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-2xs rounded-full bg-secondary text-on-secondary font-caption text-caption uppercase tracking-wider">
+              CONNECT • #20
+            </span>
+<span class="flex items-center gap-space-2xs text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">group</span> Co-op Activity
+            </span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              Family Memory Mission
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2xs">
+              A collaborative photo and story prompt curated by daughter Meera, ready to enjoy together during this evening's video visit.
+            </p>
+</div>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-on-surface-variant font-caption text-caption">6 mins</span>
+<span class="px-space-xs py-space-2xs rounded bg-secondary-fixed text-on-secondary-fixed font-caption text-caption">Synced with Meera</span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Prepared for 6:30 PM</span>
+<button class="min-h-[56px] px-space-lg rounded-xl bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface font-label-lg text-label-lg flex items-center gap-space-xs transition-colors" type="button">
+<span>Start Moment</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</article>
+</div>
+<!-- Caregiver Calibration & Cognitive Reassurance Footnote -->
+<div class="mt-space-3xl p-space-xl rounded-2xl bg-surface-container-low flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-md max-w-2xl">
+<div class="w-14 h-14 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[32px]">hearing</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">SmritiAI Adaptive Pacing Active</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2xs">
+            Every session adapts dynamically without penalty or timers. If hesitation is detected, SmritiAI gently reads options aloud in Asha's chosen language with soothing tones.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="min-h-[56px] px-space-lg rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high font-label-lg text-label-lg transition-colors" type="button">
+          Adjust Preferences
+        </button>
+<button class="min-h-[56px] px-space-lg rounded-xl bg-secondary text-on-secondary hover:bg-secondary/90 font-label-lg text-label-lg flex items-center gap-space-xs shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">contact_support</span>
+<span>Caregiver Help</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for category filter tabs
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterTabs = document.querySelectorAll('[role="tablist"] button');
+    filterTabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        filterTabs.forEach((t) => {
+          t.setAttribute('aria-selected', 'false');
+          t.classList.remove('bg-primary', 'text-on-primary');
+          t.classList.add('bg-surface-container-low', 'text-on-surface');
+        });
+        tab.setAttribute('aria-selected', 'true');
+        tab.classList.remove('bg-surface-container-low', 'text-on-surface');
+        tab.classList.add('bg-primary', 'text-on-primary');
+      });
+    });
+
+    // Tactile feedback on choice radio click
+    const choices = document.querySelectorAll('input[name="recollection_choice"]');
+    choices.forEach((input) => {
+      input.addEventListener('change', (e) => {
+        choices.forEach(c => {
+          const parentLabel = c.closest('label');
+          if (parentLabel) {
+            parentLabel.classList.remove('bg-surface-container-low');
+            parentLabel.classList.add('bg-surface-container-lowest');
+            const check = parentLabel.querySelector('.material-symbols-outlined');
+            if (check) check.textContent = 'circle';
+          }
+        });
+        const currentLabel = e.target.closest('label');
+        if (currentLabel) {
+          currentLabel.classList.remove('bg-surface-container-lowest');
+          currentLabel.classList.add('bg-surface-container-low');
+          const check = currentLabel.querySelector('.material-symbols-outlined');
+          if (check) check.textContent = 'check';
+        }
+      });
+    });
+  });
+</script></div></main><footer class="w-full bg-surface-container-low mt-space-3xl py-space-2xl"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="MindMitra Brand Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wh1ONZtSozjOSUeL7-32KP2LbIG7NKR9S8OMEg0mhQKOGR9NnccyXGSdK4YAJBoxwUTWiGJgGuyICdZa7XZwx-tLmqZzkO3hX3MkAC4pCusYoQ0MiEh6Jh8ljjHRHxEm4iS5olvrGpdDhkJGlqJxWmbVvn5uPpx5y8ZVSWlkCn8ttgtYtFqIM0JNqwiE8l0rVZnX89krh01OChkV96ZdDLfPserbFuKVMAlGJuN6p1_TVKuD4_UYqB2BU"/><span class="font-headline-sm text-headline-sm text-primary">MindMitra</span><span class="font-caption text-caption text-on-surface-variant">• Gentle Cognitive Care &amp; Reminiscence</span></div><div class="flex items-center gap-space-lg font-label-md text-label-md text-on-surface-variant"><span class="flex items-center gap-space-2xs text-tertiary font-medium"><span class="material-symbols-outlined text-[18px]">cloud_done</span> Local Safe Sync</span><a class="hover:text-on-surface transition-colors" data-path="accessibility-options" href="#">Elder Accessibility</a><a class="hover:text-on-surface transition-colors" data-path="privacy-heirloom" href="#">Heirloom Privacy</a><a class="hover:text-on-surface transition-colors" data-path="caregiver-support" href="#">Emergency SOS</a></div><div class="font-caption text-caption text-on-surface-variant">© 2024 MindMitra. Crafted for dignity, calm, and memory longevity.</div></div></footer></body></html>
